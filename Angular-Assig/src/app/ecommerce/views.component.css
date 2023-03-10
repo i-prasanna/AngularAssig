@@ -1,0 +1,116 @@
+.title{
+    text-align: center;
+}
+
+.product-items{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px, 1fr)); */
+}
+
+/* .product-items>* {
+    flex: 0 0 33.3333%;
+} */
+
+.sort{
+    justify-content:center;
+  align-items:center;
+  margin-left: 20px;
+}
+
+.sortMethod{
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius:5px;
+}
+
+.buttons{
+    display: flex;
+    margin-left: 750px;
+    border-radius: 4px;
+}
+
+.product-items{
+    display: flex;
+}
+
+.grid-card-container{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-card-container{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: arial;
+  }
+
+  img{
+    width: 100%;
+    height: 250px;
+  }
+
+  .grid-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 95%;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  .grid-card button:hover {
+    opacity: 0.7;
+  }
+
+  .list-card {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+  }
+
+  .list-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 95%;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .list-card button:hover {
+    opacity: 0.7;
+  }
+
+  .list-card-image img{
+    width: 150px;
+    height: 100%;
+  }

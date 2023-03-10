@@ -1,0 +1,66 @@
+<!-- <p>views works!</p> -->
+<div class="container">
+  <h2 class="title">Products</h2>
+    <div class="buttons">
+      <button type="button" 
+      class="btn btn-default btn-sm" 
+      [class.active]="viewMode == 'list'" 
+      (click)="viewMode = 'list'">
+        <span class="glyphicon glyphicon-th-list" ></span> List
+      </button>
+      <button type="button" 
+      class="btn btn-default btn-sm" 
+      [class.active]="viewMode == 'grid'" 
+      (click)="viewMode = 'grid'">
+        <span class="glyphicon glyphicon-th-large" ></span> Grid
+      </button>
+        <div class="sort">
+        <label for="sortMethod">sort by price:</label>
+        <select name="sortMethod" id="sortMethod" class="sortMethod" (click)="sort($event) ">
+            <option value="featured"></option>
+            <option *ngFor="let Method of sortMethods" [value]="Method">{{Method}}</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="product-items" [ngSwitch]="viewMode">
+
+      <div class="grid-card-container" *ngSwitchCase = "'grid'">
+        <div  *ngFor="let product of products">
+            <div class="grid-card">
+            <div class="grid-card-image">
+              <img src={{product.image}} 
+            alt="Denim Jeans" >
+            </div>
+            <div class="grid-card-details">
+              <b><h4>{{product.title}} </h4></b>
+            <h4><p class="price">${{product.price}} </p></h4>
+            <p>{{product.description}} </p>
+            <p><button>Add to Cart</button></p>
+            </div>
+            </div>
+        </div>
+      </div>
+      
+      <div class="list-card-container" *ngSwitchCase = "'list'">
+        <div *ngFor="let product of products">
+            <div class="list-card">
+            <div class="list-card-image">
+              <img src={{product.image}} >
+            </div>
+            <div class="list-card-details">
+            <b><h3>{{product.title}} </h3></b>
+            <h4><p class="price">${{product.price}} </p></h4>
+            <p>{{product.description}} </p>
+            <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div *ngSwitchDefault>Otherwise</div>
+        
+    </div>
+    
+  </div>

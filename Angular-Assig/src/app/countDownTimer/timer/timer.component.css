@@ -1,0 +1,5 @@
+.timer .top{
+    display: inline-flex;
+    margin-left: 80px;
+    justify-content: center;
+}

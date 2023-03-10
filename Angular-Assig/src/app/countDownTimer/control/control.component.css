@@ -1,0 +1,53 @@
+.control{
+    border: 2px solid black;
+    text-align: center;
+    width: 500px;
+    margin:30px;
+}
+
+.time{
+    margin: 60px;
+}
+
+label{
+    display: inline-block;
+}
+
+input{
+    margin: 6px;
+}
+
+.controlButtons{
+    margin-left: 135px;
+    /* margin: 10px; */
+}
+
+button{
+    margin: 2px;
+}
+
+.containerData{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.default {
+    background-color: #15db1f;
+    cursor: pointer;
+  }
+  
+  .disable {
+    background-color: #8a8a8a;
+    cursor: not-allowed;
+  }
+  
+  .pause {
+    background-color: #f8f411f8;
+    cursor: pointer;
+  }
+  
+  .reset {
+    background-color: #15db1f;
+    cursor: pointer;
+  }
+  

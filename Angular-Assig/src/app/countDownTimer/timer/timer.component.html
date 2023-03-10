@@ -1,0 +1,17 @@
+<div class="timer">
+    <div class="top">
+        <app-display 
+        [count]="countLimit" 
+        [start]="start" 
+        [pause]="pause" 
+        [reset]="reset">
+        </app-display>
+        <app-control 
+        (eventChange)="onChangeCountLimit($event)"
+        (eventChangeStart)="onChangeStart($event)"
+        (eventChangePause)="onChangePause($event)"
+        (eventChangeReset)="onChangeReset($event)"
+        ></app-control>
+    </div>
+</div>
+

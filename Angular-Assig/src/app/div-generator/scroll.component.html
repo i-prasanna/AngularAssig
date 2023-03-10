@@ -1,0 +1,11 @@
+<div class="search-results-container" 
+    infinite-scroll  
+    [scrollWindow]="false"
+    (scrolled)="onScrollDown($event)" >
+
+      <div class="list-group" *ngFor="let i of listArray">
+          <div class="divelement">
+            <button (click)="alertButton(i);">Button {{i}}</button>
+          </div>
+      </div>
+</div>

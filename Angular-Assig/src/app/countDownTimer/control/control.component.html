@@ -1,0 +1,43 @@
+<div class="control">
+    <h3 id="title">Count Down Timer</h3>
+
+    <!-- <ng-container [counter]="counter" [interval]="interval" (value)="value = $event">
+      <h3>{{ value }}</h3>
+    </ng-container> -->
+    <div class="controlContainer">
+        <label for="limit"><h3>Enter Timer Limit </h3></label>
+        <input type="text" #valueTime value="">
+        <!-- <input #email (keyup.enter) = "onKeyUpValueByTemplateVariable(email.value)" /> -->
+
+        <div class="controlButtons">
+            <input
+            id="starter"
+            type="button"
+            (mouseup)="handleStarter(valueTime.value)"
+            [ngClass]="starterStopper ? pauser ? 'default' : 'pause' : 'default'"
+            [value]="starterStopper ? pauser ? 'Resume' : 'Pause' : 'Start'"
+            />
+            <input
+            id="reset"
+            type="button"
+            [disabled]="!starterStopper"
+            (mouseup)="handleReset()"
+            [ngClass]="pauser ? 'reset' : starterStopper ? 'default' : 'disable'"
+            [value]="'Reset'"
+            />
+        </div>
+        
+    </div>
+
+    <div class="containerData">
+    </div>
+    
+    
+
+
+    <!-- <label>Count</label>
+    <input type="number" [(ngModel)]="counter"/> 
+    <label>Interval<label>
+    <input type="number" [(ngModel)]="interval"/> -->
+</div>
+

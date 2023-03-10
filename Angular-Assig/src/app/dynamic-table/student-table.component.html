@@ -1,0 +1,15 @@
+<!-- <p>student-table works!</p> -->
+<div class="student">
+  <table>
+    <thead>
+        <tr>           
+          <th *ngFor="let head of displayedColumns" (click)="sort(head)">{{head}}</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr *ngFor="let row of studentsData">           
+            <th *ngFor="let head of displayedColumns">{{row[head]}}</th>
+        </tr>
+    </tbody>
+  </table>
+</div>

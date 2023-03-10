@@ -1,0 +1,98 @@
+.first {
+   
+    width: 100%;
+    height:660px;
+    display: flex;
+    background-color: violet;
+    border:2px solid black;
+    flex-direction: row;
+ flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .second{
+   background-color: indigo;
+    width: 95%;
+ height:600px;
+border:2px solid black;
+    color: white;
+    padding-top: 5px;
+ }
+
+ .third{
+   background-color: blue;
+   border:2px solid black;
+    width: 95%;
+ height:550px;
+   margin-left:32px;
+margin-top: 22px;
+    
+    color: white;
+    position:relative
+   
+
+ }
+
+ .fourth{
+   background-color: greenyellow;
+   border:2px solid black;
+    width:95%;
+  height:497px;
+ 
+   color: white;
+ position: absolute;
+  margin-top:26px ;
+
+  margin-right: 700px;
+margin-left: 32px;
+
+ }
+ .fifth{
+   background-color: yellow;
+   border:2px solid black;
+   width:95%;
+ height:448px;
+ 
+margin-top:24px ;
+margin-left:30px ;
+margin-right: 50px;
+position: absolute;
+}
+
+.six{
+   background-color: orange;
+   border:2px solid black;
+   width:94.7%;
+ height:400px;
+
+margin-top:24px ;
+margin-left:30px ;
+
+position: absolute;
+
+
+}
+
+
+ 
+ 
+.seven{
+   background-color: red;
+   border:2px solid black;
+   width:80%;
+ height:200px;
+
+margin-top:96px ;
+margin-left:98px ;
+animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }

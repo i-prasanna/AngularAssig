@@ -1,0 +1,10 @@
+.display{
+    border: 2px solid black;
+    text-align: center;
+    width: 500px;
+    margin:30px;
+}
+
+.timeCount{
+    margin: 60px;
+}
